@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bröllop</title>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #FFECA2;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      position: relative;
+    }
+
+    .container img {
+      width: 100%;
+      transform: scale(1.2); /* mer inzoomad */
+      transform-origin: top center;
+      display: block;
+    }
+
+    .button-container {
+      position: absolute;
+      bottom: -150px; /* justera om du vill flytta knappen */
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .osa-button {
+      background-color: #b22222;
+      color: #A8BBCC;
+      padding: 15px 32px;
+      font-size: 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .osa-button:hover {
+      background-color: #8b1a1a;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <img src="bild.png" alt="">
+    
+    <div class="button-container">
+      <a class="osa-button" href="https://forms.gle/tPSdUk7HjWFcnBFC7" target="_blank" rel="noopener noreferrer">
+        OSA här
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
