@@ -11,6 +11,8 @@
       background-color: #FFECA2;
       display: flex;
       justify-content: center;
+      overflow-x: hidden;
+      font-family: sans-serif;
     }
 
     .container {
@@ -21,14 +23,12 @@
 
     .container img {
       width: 100%;
-      transform: scale(1.2); /* mer inzoomad */
-      transform-origin: top center;
       display: block;
     }
 
     .button-container {
       position: absolute;
-      bottom: -175px; /* justera om du vill flytta knappen */
+      bottom: 8%;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -38,13 +38,36 @@
       color: #A8BBCC;
       padding: 15px 32px;
       font-size: 18px;
-      border-radius: 8px;
+      border-radius: 10px;
       text-decoration: none;
       display: inline-block;
+      transition: background-color 0.3s ease;
+      white-space: nowrap;
     }
 
     .osa-button:hover {
       background-color: #8b1a1a;
+    }
+
+    /* =========================
+       MOBILVERSION
+    ========================== */
+
+    @media (max-width: 768px) {
+
+      .container {
+        width: 100%;
+      }
+
+      .button-container {
+        bottom: 3%;
+      }
+
+      .osa-button {
+        font-size: 20px;
+        padding: 16px 34px;
+        border-radius: 12px;
+      }
     }
 
   </style>
@@ -53,13 +76,21 @@
 <body>
 
   <div class="container">
-    <img src="bild.png" alt="">
-    
+
+    <!-- BYT NAMNET nedan till exakt vad din bild heter -->
+    <img src="bild.png" alt="Bröllopsinbjudan">
+
     <div class="button-container">
-      <a class="osa-button" href="https://forms.gle/tPSdUk7HjWFcnBFC7" target="_blank" rel="noopener noreferrer">
+      <a 
+        class="osa-button" 
+        href="https://forms.gle/tPSdUk7HjWFcnBFC7" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
         OSA här
       </a>
     </div>
+
   </div>
 
 </body>
